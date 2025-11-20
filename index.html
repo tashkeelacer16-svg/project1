@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Verse - Gaming & Esports</title>
+
+
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* ====== GLOBAL ====== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #02383d;
+            color: #ecd1b1;
+            line-height: 1.6;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: wheat;
+        }
+
+        /* ====== NAVBAR ====== */
+        header {
+            background: #c09456;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #222;
+            background-image: url("https://wallpapercave.com/wp/wp7295172.jpg");
+        }
+
+        header .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #00eaff;
+        }
+
+        nav a {
+            margin-left: 25px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00eaff;
+        }
+
+        /* ====== HERO SECTION ====== */
+        .hero {
+            height: 80vh;
+            /* background: url('https://i.imgur.com/vt3ML7o.jpeg') no-repeat center center/cover; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            text-shadow: 0 0 10px #000000;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin: 20px 0;
+            text-shadow: 0 0 10px #000;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: #00e5ff;
+            color: #000;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #009dbb;
+        }
+
+        /* ====== SECTION STYLES ====== */
+        section {
+            padding: 60px 40px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 25px;
+            color: #00eaff;
+        }
+
+        .content-box {
+            background: #111;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #222;
+            margin-top: 20px;
+        }
+
+        /* ====== GRID FOR GAMES ====== */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+
+        }
+
+        .game-card {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.3s;
+            border: 1px solid #222;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #00eaff;
+        }
+
+        /* ====== FOOTER ====== */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            border-top: 2px solid #222;
+            margin-top: 40px;
+            color: #bbb;
+        }
+
+        /* ====== RESPONSIVE ====== */
+        @media(max-width: 768px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="logo">Game Verse</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#games">Games</a>
+            <a href="#tournaments">Tournaments</a>
+        </nav>
+        <!doctype html>
+        <html>
+
+        <head>
+            <meta charset="utf-8">
+            <style>
+                body {
+                    font-family: sans-serif
+                }
+
+                form {
+                    max-width: 320px;
+                    margin: 40px auto
+                }
+
+                input,
+                button {
+                    display: block;
+                    width: 100%;
+                    margin: 8px 0;
+                    padding: 8px
+                }
+
+                a {
+                    font-size: 14px
+                }
+            </style>
+        </head>
+
+        </style>
+
+        <style>
+            .game-logo {
+                width: 60px;
+                height: 80px;
+                border-radius: 0%;
+                background: linear-gradient(135deg, #b093e3, #0bf497);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 15px;
+                font-weight: bld;
+                animation: spin 1s linear infinite;
+            }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(60%);
+                }
+
+                100% {
+                    transform: rotate(90deg);
+                }
+            }
+        </style>
+
+        <!-- <div class="game-logo">Game </div> -->
+
+        <div class="signup-box">
+
+            <div>
+
+            </div>
+            <h2>Create Account</h2>
+
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" placeholder="Enter username">
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="you@example.com">
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Create password">
+            </div>
+
+            <button class="btn">Sign Up</button>
+
+            <div class="signin-link">
+                Already have an account? <a href="#">Login</a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- HOME SECTION -->
+    <div class="hero" id="home">
+        <h1>Welcome to Game Verse</h1>
+        <p>The Ultimate Hub for Gaming & Esports Competitions</p>
+        <a class="btn" href="#tournaments">Join Tournaments</a>
+        <img src=https://i.ytimg.com/vi/eO_a-WMvXmA/maxresdefault.jpg alt="" srcset="">
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="content-box">
+            <p>Game Verse is a global gaming and esports community built for gamers of every level.
+                We provide competitive tournaments, gaming events, live leaderboards, and a strong community
+                for players who love to compete, connect, and dominate t GameVerse, we believe gaming is not just
+                entertainment—it is teamwork, strategy, creativity, and passion. That is why we offer a wide range of
+                games across PC, mobile, and console, supported by fast servers and professional-quality equipment. We
+                organise regular esports tournaments with clear rules, fair play standards, and attractive prizes to
+                help new and experienced players showcase their skills.</p>
+        </div>
+    </section>
+
+    <!-- GAMES SECTION -->
+    <section id="games">
+        <h2>Games We Host</h2>
+
+        </div>
+        <p>
+        <div class="badges">
+            <div class="badge">🔥 Pro Leagues</div>
+            <div class="badge">⚡ Live Events</div>
+            <div class="badge">🏆 Rewards</div>
+        </div>
+        </div>
+        </p>
+        <div class="grid">
+            <div class="game-card">Valorant</div>
+            <div class="game-card">Fortnite</div>
+            <div class="game-card">Call of Duty</div>
+            <div class="game-card">FIFA / FC24</div>
+            <div class="game-card">Apex Legends</div>
+            <div class="game-card">PUBG Mobile</div>
+            <section id="games">
+                <h3>Popular Games</h3>
+                <div class="games" style="margin-top:12px">
+                    <div class="game-card">
+                        <div class="game-thumb" style="background:linear-gradient(135deg,#0ea5a5,#7c3aed)"></div>
+                        <div style="flex:1">
+                            <div style="font-weight:800">Apex Arena</div>
+                            <div class="muted">Battle royale · shooter</div>
+                        </div>
+                        <div style="text-align:right">
+                            <div class="small-link">Play</div>
+                        </div>
+                    </div>
+
+
+                    <div class="game-card">
+                        <div class="game-thumb" style="background:linear-gradient(135deg,#f97316,#ef4444)"></div>
+                        <div style="flex:1">
+                            <div style="font-weight:800">Nexus Racing</div>
+                            <div class="muted">Racing · teams</div>
+                        </div>
+                        <div style="text-align:right">
+                            <div class="small-link">Play</div>
+                        </div>
+                    </div>
+
+
+                    <div class="game-card">
+                        <div class="game-thumb" style="background:linear-gradient(135deg,#60a5fa,#7c3aed)"></div>
+                        <div style="flex:1">
+                            <div style="font-weight:800">Legends Arena</div>
+                            <div class="muted">MOBA · ranked</div>
+                        </div>
+                        <div style="text-align:right">
+                            <div class="small-link">Play</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <style>
+                .box {
+                    width: 80px;
+                    height: 80px;
+                    background: rgb(221, 10, 10);
+                }
+
+                @keyframes move {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    0% {
+                        transform: translateX(1000px);
+                    }
+                }
+
+                .animate {
+                    animation: move 2s infinite alternate;
+                }
+            </style>
+
+            <div class="box animate"></div>
+        </div2>
+
+        <style>
+                .box {
+                    width: 80px;
+                    height: 80px;
+                    background: rgb(95, 1, 1);
+                }
+
+                @keyframes move {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    0% {
+                        transform: translateX(1000px);
+                    }
+                }
+
+                .animate {
+                    animation: move 2s infinite alternate;
+                }
+            </style>
+
+            <div class="box animate"></div>
+    </section>
+
+    <!-- TOURNAMENTS SECTION -->
+    <section id="tournaments">
+        <h2>Tournaments</h2>
+        <div class="content-box">
+            <p>✔ Weekly tournaments<br>
+                ✔ Cash prizes & ranks<br>
+                ✔ Live scoreboard<br>
+                ✔ Solo, Duo, and Squad modes</p>
+
+            <p style="margin-top: 20px;">
+                **Upcoming Event:**
+                <strong>Valorant Showdown – 18 nov </strong><br>
+                Price Pool ₹1,299.
+            </p>
+        </div>
+    </section>
+
+    <style>
+                .box {
+                    width: 80px;
+                    height: 80px;
+                    background: rgb(234, 255, 0) (90, 1, 95);
+                }
+
+                @keyframes move {
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    0% {
+                        transform: translateX(1000px);
+                    }
+                }
+
+                .animate {
+                    animation: move 2s infinite alternate;
+                }
+            </style>
+
+            <div class="box animate"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Game Verse Gaming & Esports. All rights reserved.
+        <p>
+            follow us instagram : facebook : youtube</p>
+        <p>706184XXXX</div>
+            tashkeelaamir118@gmail.com</p>
+    </footer>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <link rel="stylesheet" href="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<body>
+    <header>Responsive Website</header>
+    <header>Thank You</header>
+
+
+
+</body>
+
+</html>
